@@ -1,16 +1,29 @@
-# React + Vite
+# GitHub Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Search any GitHub username and see their profile and top repositories.
 
-Currently, two official plugins are available:
+[Live Demo](https://github-explorer-green-delta.vercel.app/)
+![Alt text](image.png "Screen Shot")
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features List
 
-## React Compiler
+- Search any GitHub user by username
+- View profile info, bio, and stats
+- See top repositories sorted by stars
+- Handles loading and error states
+  Responsive design — works on mobile
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech stack
 
-## Expanding the ESLint configuration
+Built with React, Vite, and the GitHub REST API.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+What I learned
+Building this taught me how to manage three states for an async operation — loading, error, and data — using useEffect and the fetch API. I also learned the importance of cleanup in effects to prevent memory leaks when users search rapidly.
+
+## How to run it locally
+
+````git clone [https://github.com/Anshuman56/github-explorer]
+cd github-explorer
+npm install
+npm run dev```
+````
