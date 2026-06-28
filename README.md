@@ -17,13 +17,15 @@ Search any GitHub username and see their profile and top repositories.
 
 Built with React, Vite, and the GitHub REST API.
 
-What I learned
-Building this taught me how to manage three states for an async operation — loading, error, and data — using useEffect and the fetch API. I also learned the importance of cleanup in effects to prevent memory leaks when users search rapidly.
+## What I learned
+
+"This was my first React app that talks to a real API. I struggled with handling the case where the user doesn't exist — I had to learn to check the response status before trying to use the data. I also got confused by useEffect cleanups (still working on that one)."
 
 ## How to run it locally
 
-````git clone [https://github.com/Anshuman56/github-explorer]
+```
+git clone [https://github.com/Anshuman56/github-explorer]
 cd github-explorer
 npm install
-npm run dev```
-````
+npm run dev
+```
